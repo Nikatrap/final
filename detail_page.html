@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/778c7f33ef.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index (4) (1).html"><img src="logo.png" alt="carlogo" class="logo"></a>
+        <nav class="navbar">
+          <ul>
+              <a href="registration_page.html"><li>Registration</li></a>
+              <a href="detail_page.html"><li>Details About Items</li></a>
+              <a href="https://www.facebook.com/nikoloz.trapaidze/"><li>Contact us</li></a>
+          </ul>
+      </nav>
+      <div id="burger" class="mobile_burger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="hide mobile_navigation" id="mobile">
+          <nav class="mobile_nav">
+              <ul>
+                <a href="registration_page.html"><li>Registration</li></a>
+                <a href="detail_page.html"><li>Details About Items</li></a>
+              </ul>
+          </nav>
+      </div>
+        <button class="h4">EN</button>
+        <button class="h4_sign_in">Sign In</button>   
+    </header>
+    <script>
+        const burger = document.getElementById ('burger')
+        const mobile = document.getElementById ('mobile')
+        burger.addEventListener ('click', () => {
+            mobile.classList.toggle('show')
+            mobile.classList.toggle('hide')
+        })
+    </script>
+</body>

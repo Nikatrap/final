@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/778c7f33ef.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<title>Document</title>
+</head>
+<body>
+    <header>
+      <a href="index (4) (1).html"><img src="logo.png" alt="carlogo" class="logo"></a>
+        <nav class="navbar">
+          <ul>
+              <a href="registration_page.html"><li>Registration</li></a>
+              <a href="detail_page.html"><li>Details About Items</li></a>
+              <a href="https://www.facebook.com/nikoloz.trapaidze/"><li>Contact us</li></a>
+          </ul>
+      </nav>
+      <div id="burger" class="mobile_burger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="hide mobile_navigation" id="mobile">
+          <nav class="mobile_nav">
+              <ul>
+                <a href="registration_page.html"><li>Registration</li></a>
+                <a href="detail_page.html"><li>Details About Items</li></a>
+              </ul>
+          </nav>
+      </div>
+        <button class="h4">EN</button>
+        <button class="h4_sign_in">Sign In</button>   
+    </header>
+    <div class="eser">
+        <h1 class="user">Cars</h1>
+    </div>
+    <div class="profiles-container">
+        <div class="top-profiles">
+          <a href="https://www.landrover.com/range-rover/range-rover/index.html">
+            <div class="item1">
+              <a href="https://www.landrover.com/range-rover/range-rover/index.html">
+                <h1 class="carname">Range Rover</h1></a>
+              <rowspan style="background-color: transparent;">ID: <rowspan style="color: orangered; background-color: transparent;">#341401</rowspan></rowspan>
+              <rowspan style="background-color: transparent;">Status: <rowspan style="color: green; background-color: transparent;">Available</rowspan></rowspan>
+              <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Land-Rover/Range-Rover/9018/1676541159356/front-left-side-47.jpg" alt="" class="car1photo">
+              </a>
+            </div>
+          </a>
+          <div class="item2">
+            <a href="https://mazda.ge/en/vehicles/mazda-6"><h1 class="carname">Mazda</h1></a>
+            <rowspan style="background-color: transparent;">ID: <rowspan style="color: orangered; background-color: transparent;">#341404</rowspan></rowspan>
+            <rowspan style="background-color: transparent;">Status: <rowspan style="color: green; background-color: transparent;">Available</rowspan></rowspan>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/2021-mazda-mazda6-carbon-edition-394-edit-1611709080.jpg?crop=0.569xw:0.638xh;0.377xw,0.362xh&resize=640:*" alt="" class="car1photo">
+          </div>
+          <div class="item3">
+            <a href="detail_page.html"><h1 class="carname">PORSCHE</h1></a>
+            <rowspan style="background-color: transparent;">ID: <rowspan style="color: orangered; background-color: transparent;">#344000</rowspan></rowspan>
+            <rowspan style="background-color: transparent;">Status: <rowspan style="color: red; background-color: transparent;">Unavailable</rowspan></rowspan>
+            <img src="https://pics.porsche.com/rtt/iris?COSY-EU-100-1713c6eK12UC31P3T5JOCU%25hjdmiTDDmvMXlHWguCuq6Q44RtRHo9ZAaDjYu5P3I7tGW3rNbZJNKXv9Z7KcQQ%25yFN5tFAsXrw4r3wo0qnqZr8MCnR4i84tV2YN2OmNyW1QGWgCWKMUuyOBoV60KBiuWTQ4ngfNsRI0DyJGcT891mfIOuw6eu8q%25LAlmP3GeSvg3%25n3IaGuyOisMeIzR%25BWIJCgN2" alt="" class="car1photo">
+          </div>
+        </div>
+    </div>
+    <script>
+      const burger = document.getElementById ('burger')
+      const mobile = document.getElementById ('mobile')
+      burger.addEventListener ('click', () => {
+          mobile.classList.toggle('show')
+          mobile.classList.toggle('hide')
+      })
+  </script>
+</body>
+</html>
+
+
+
+

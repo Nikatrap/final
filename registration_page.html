@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registrationstyles.css">
+    <script src="https://kit.fontawesome.com/778c7f33ef.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="index (4) (1).html"><img src="logo.png" alt="carlogo" class="logo"></a>
+        <nav class="navbar">
+          <ul>
+              <a href="registration_page.html"><li>Registration</li></a>
+              <a href="detail_page.html"><li>Details About Items</li></a>
+              <a href="detail_page.html"><li>Contact us</li></a>
+          </ul>
+      </nav>
+      <div id="burger" class="mobile_burger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="hide mobile_navigation" id="mobile">
+          <nav class="mobile_nav">
+              <ul>
+                <a href="registration_page.html"><li>Registration</li></a>
+                <a href="detail_page.html"><li>Details About Items</li></a>
+              </ul>
+          </nav>
+      </div>
+        <button class="h4">EN</button>
+        <button class="h4_sign_in">Sign In</button>   
+    </header>
+    <form class="container">
+        <h1 style="color: black;">Registration</h1>
+        <input type="text" name ="Email" placeholder="Email" class="input"/>
+        <input type="text" name ="Name" placeholder="Name" class="input"/>
+        <input type="text" name ="Surname" placeholder="Surname" class="input" />
+        <input  type="password" name ="password" placeholder="Password" id="password" class="input"/>
+        <input  type="password" name ="confirmPassword" placeholder="ConfirmPassword"  id="confirm-password" class="input"/>
+        <button class="registration_button" type="submit" id="regbut" >Sign Up</button>
+    </form>
+    <script>
+        const burger = document.getElementById ('burger')
+      const mobile = document.getElementById ('mobile')
+      burger.addEventListener ('click', () => {
+          mobile.classList.toggle('show')
+          mobile.classList.toggle('hide')
+      })
+
+        document.querySelector('form').addEventListener('submit', function(event) {
+       var password = document.getElementById('password').value;
+       var confirmPassword = document.getElementById('confirm-password').value;
+     
+       if (password !== confirmPassword) {
+         alert("Passwords do not match.");
+         event.preventDefault();
+       }
+     });
+
+
+
+     
+     </script>
+</body>
+</html>
